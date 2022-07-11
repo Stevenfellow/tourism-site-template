@@ -64,45 +64,52 @@ class _HomePageState extends State<HomePage> {
               child: TopBarContents(_opacity),
             ),
       drawer: const ExploreDrawer(),
-      body: SingleChildScrollView(
-        controller: _scrollController,
-        physics: const ClampingScrollPhysics(),
-        child: Column(
-          children: [
-            Stack(
-              children: [
-                Container(
-                  child: SizedBox(
-                    height: screenSize.height * 0.35,
-                    width: screenSize.width,
-                    child: Image.asset(
-                      'assets/images/cover.jpg',
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-                Column(
-                  children: [
-                    FloatingQuickAccessBar(screenSize: screenSize),
-                    Container(
-                      child: Column(
-                        children: [
-                          FeaturedHeading(
-                            screenSize: screenSize,
-                          ),
-                          FeaturedTiles(screenSize: screenSize)
-                        ],
+      body: Container(
+        decoration: const BoxDecoration(
+            image: DecorationImage(
+          image: AssetImage('assets/images/trekkins.jpg'),
+          fit: BoxFit.fill,
+        )),
+        child: SingleChildScrollView(
+          controller: _scrollController,
+          physics: const ClampingScrollPhysics(),
+          child: Column(
+            children: [
+              Stack(
+                children: [
+                  // Container(
+                  //   child: SizedBox(
+                  //     height: screenSize.height * 0.15,
+                  //     width: screenSize.width,
+                  //     child: Image.asset(
+                  //       'assets/images/cover.jpg',
+                  //       fit: BoxFit.cover,
+                  //     ),
+                  //   ),
+                  // ),
+                  Column(
+                    children: [
+                      FloatingQuickAccessBar(screenSize: screenSize),
+                      Container(
+                        child: Column(
+                          children: [
+                            FeaturedHeading(
+                              screenSize: screenSize,
+                            ),
+                            FeaturedTiles(screenSize: screenSize)
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
-                )
-              ],
-            ),
-            DestinationHeading(screenSize: screenSize),
-            DestinationCarousel(),
-            SizedBox(height: screenSize.height / 10),
-            const BottomBar(),
-          ],
+                    ],
+                  )
+                ],
+              ),
+              DestinationHeading(screenSize: screenSize),
+              DestinationCarousel(),
+              SizedBox(height: screenSize.height / 10),
+              const BottomBar(),
+            ],
+          ),
         ),
       ),
     );

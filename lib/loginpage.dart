@@ -99,6 +99,12 @@ class _MyWidgetState extends State<MyWidget> {
                         height: 20,
                       ),
                       Container(
+                          decoration: const BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/images/google.png'),
+                                fit: BoxFit.fill,
+                              ),
+                              shape: BoxShape.circle),
                           height: 50,
                           padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                           child: ElevatedButton(
