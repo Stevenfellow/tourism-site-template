@@ -69,6 +69,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                           Text(
                             'Discover',
                             style: TextStyle(
+                              fontSize: 40,
                               color: _isHovering[0]
                                   ? Colors.blue.shade200
                                   : Colors.white,
@@ -105,6 +106,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                           Text(
                             'Contact Us',
                             style: TextStyle(
+                              fontSize: 40,
                               color: _isHovering[1]
                                   ? Colors.blue[200]
                                   : Colors.white,
@@ -143,7 +145,8 @@ class _TopBarContentsState extends State<TopBarContents> {
                 child: Text(
                   'Sign Up',
                   style: TextStyle(
-                    color: _isHovering[2] ? Colors.white : Colors.white70,
+                    fontSize: 40,
+                    color: _isHovering[2] ? Colors.blue : Colors.white70,
                   ),
                 ),
               ),
@@ -165,7 +168,8 @@ class _TopBarContentsState extends State<TopBarContents> {
                 child: Text(
                   'Login',
                   style: TextStyle(
-                    color: _isHovering[3] ? Colors.white : Colors.white70,
+                    fontSize: 40,
+                    color: _isHovering[3] ? Colors.blue : Colors.white70,
                   ),
                 ),
               ),

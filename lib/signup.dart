@@ -72,7 +72,7 @@ class SignupPage extends StatelessWidget {
                       child: Container(
                         padding: EdgeInsets.only(top: 3, left: 3),
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(40),
+                            // borderRadius: BorderRadius.circular(40),
                             border: Border(
                                 bottom: BorderSide(color: Colors.black),
                                 top: BorderSide(color: Colors.black),
@@ -83,8 +83,8 @@ class SignupPage extends StatelessWidget {
                           height: 60,
                           onPressed: () {},
                           color: Colors.green,
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(40)),
+                          // shape: RoundedRectangleBorder(
+                          //     borderRadius: BorderRadius.circular(40)),
                           child: Text(
                             "Sign Up",
                             style: TextStyle(
